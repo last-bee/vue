@@ -20,25 +20,24 @@
 * 对应的html如下：
 ` <author></author> `
 * 扩展的构造器需要挂载  
-` new author().$mount('author'); `  
+`new author().$mount('author');`  
 * 使用propsData传参
-` var author = Vue.extend({
-  template: "<p><a :href='url'>{{author}} & {{name}}</a></p>",
-  data : function() {
-    return {
-      author : 'vamous',
-      url : 'http://blog.csdn.net/Dear_Mr/article/details/72614370'
-    }
-  },
-  props : ['name']
-});
-
+` var author = Vue.extend({  
+  template: "<p><a :href='url'>{{author}} & {{name}}</a></p>",  
+  data : function() {  
+    return {  
+      author : 'vamous',  
+      url : 'http://blog.csdn.net/Dear_Mr/article/details/72614370'  
+    }  
+  },  
+  props : ['name']  
+}); 
 new author({propsData: {name : 'dear_mr'}}).$mount('#author'); `
 ```
 ### 挂载在普通标签上  
 返回的扩展实例构造器的方式和上面还是一样的，只是html里不再是自定义标签，而是一个普通标签，比如div
-* `<div id="author"></div>`  
-* `new author().$mount('author');`
+ ` <div id="author"></div> `  
+ ` new author().$mount('author'); `
 ### 其实对于同一个扩展构造器而言，它的每一个实例其实是可以挂载到不同的标签上的，比如我可以这样
 ` new author().$mount('#author');
 new author().$mount('author'); `
