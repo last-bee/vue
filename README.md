@@ -40,7 +40,7 @@ var author = Vue.extend({
 new author({propsData: {name : 'change_name'}}).$mount('#author'); ```
 ### 挂载在普通标签上  
 返回的扩展实例构造器的方式和上面还是一样的，只是html里不再是自定义标签，而是一个普通标签，比如div
- ``` html 
+ ``` javescript
  <div id="author"></div> 
  ```  
  ``` javascript
