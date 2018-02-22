@@ -45,4 +45,4 @@ new author({propsData: {name : 'dear_mr'}}).$mount('#author'); `
 new author().$mount('author'); `
 * 这两个标签的内容会一同显示，结果一样
 ```
-Vue[官方文档](https://cn.vuejs.org/v2/api/#Vue-extend)
+[Vue官方文档](https://cn.vuejs.org/v2/api/#Vue-extend)
