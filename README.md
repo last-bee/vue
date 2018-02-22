@@ -13,8 +13,8 @@ var author = Vue.extend({
     template: "<p><a :href='url'>{{author}}</a></p>",
     data : function() {
       return {
-        author : 'vamous',
-        url : 'http://blog.csdn.net/Dear_Mr/article/details/72614370'
+        author : 'lastbee',
+        url : 'https://github.com/last-bee'
       }
     }
  });
@@ -33,13 +33,13 @@ var author = Vue.extend({
   template: "<p><a :href='url'>{{author}} & {{name}}</a></p>",  
   data : function() {  
     return {  
-      author : 'vamous',  
-      url : 'http://blog.csdn.net/Dear_Mr/article/details/72614370'  
+      author : 'lastbee',  
+      url : 'https://github.com/last-bee'  
     }  
   },  
   props : ['name']  
 }); 
-new author({propsData: {name : 'dear_mr'}}).$mount('#author'); ```
+new author({propsData: {name : 'change_name'}}).$mount('#author'); ```
 ```
 ### 挂载在普通标签上  
 返回的扩展实例构造器的方式和上面还是一样的，只是html里不再是自定义标签，而是一个普通标签，比如div
