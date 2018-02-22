@@ -58,4 +58,4 @@ new author().$mount('author');
 ```
 * 这两个标签的内容会一同显示，结果一样
 ```
-[Vue官方文档](https://cn.vuejs.org/v2/api/#Vue-extend)
+[vue官方文档](https://cn.vuejs.org/v2/api/#Vue-extend)
